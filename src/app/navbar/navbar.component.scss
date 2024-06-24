@@ -1,0 +1,111 @@
+nav {
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: var(--bg_color);
+    border-bottom: 1px solid #191919;
+    transition: background-color 1s;
+}
+.dropdown {
+    display: block;
+    margin-top: 0.125em;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.custom-logout-button {
+    background-color: #eee;
+    border: none;
+    padding: 1px 15px ;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: auto;
+    height: 30px;
+    border-radius: 1rem;
+    color: rgb(237, 28, 36);
+    box-shadow: 0 0.4rem #dfd9d9;
+    text-align: center;
+    line-height: 1.5;
+
+    position: relative;
+    cursor: pointer;
+   }
+
+   .custom-logout-button:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+
+   .custom-logout-button:hover:not(:disabled) {
+    background: rgb(237, 28, 36);
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+
+   .custom-logout-button:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+   @media screen and (min-width: 320px) and (max-width: 480px) {
+    .navbar-toggler{
+        margin-left: 215px;
+       }
+}
+
+#username{
+    color: rgb(114, 191, 68);
+    font-size: 20px;
+    margin-left: 6px;
+}
