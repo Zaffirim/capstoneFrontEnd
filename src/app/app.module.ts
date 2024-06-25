@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrasileComponent } from './paesi/brasile/brasile.component';
+import { CanadaComponent } from './paesi/canada/canada.component';
 
 
 const rotte: Route[] = [
@@ -19,6 +20,10 @@ const rotte: Route[] = [
   {
     path: 'brasile',
     component: BrasileComponent
+  },
+  {
+    path: 'canada',
+    component: CanadaComponent
   }
 ]
 
@@ -28,7 +33,8 @@ const rotte: Route[] = [
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    BrasileComponent
+    BrasileComponent,
+    CanadaComponent
   ],
   imports: [
     BrowserModule,
