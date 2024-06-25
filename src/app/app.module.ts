@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrasileComponent } from './paesi/brasile/brasile.component';
 
 
 const rotte: Route[] = [
@@ -15,6 +16,10 @@ const rotte: Route[] = [
     path: '', 
     component: HomeComponent,
   },
+  {
+    path: 'brasile',
+    component: BrasileComponent
+  }
 ]
 
 @NgModule({
@@ -22,7 +27,8 @@ const rotte: Route[] = [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    BrasileComponent
   ],
   imports: [
     BrowserModule,
