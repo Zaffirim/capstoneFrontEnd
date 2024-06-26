@@ -12,6 +12,8 @@ import { BrasileComponent } from './paesi/brasile/brasile.component';
 import { CanadaComponent } from './paesi/canada/canada.component';
 import { Login2Component } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PrenotaComponent } from './prenota/prenota.component';
 
 
 const rotte: Route[] = [
@@ -30,6 +32,10 @@ const rotte: Route[] = [
   {
     path: 'login',
     component: Login2Component
+  },
+  {
+    path: 'prenota',
+    component: PrenotaComponent
   }
 ]
 
@@ -42,12 +48,14 @@ const rotte: Route[] = [
     BrasileComponent,
     CanadaComponent,
     Login2Component,
-    RegisterComponent
+    RegisterComponent,
+    PrenotaComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(rotte),
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
