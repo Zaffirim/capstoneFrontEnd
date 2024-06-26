@@ -10,6 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrasileComponent } from './paesi/brasile/brasile.component';
 import { CanadaComponent } from './paesi/canada/canada.component';
+import { Login2Component } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 
 const rotte: Route[] = [
@@ -24,6 +26,10 @@ const rotte: Route[] = [
   {
     path: 'canada',
     component: CanadaComponent
+  },
+  {
+    path: 'login',
+    component: Login2Component
   }
 ]
 
@@ -34,7 +40,9 @@ const rotte: Route[] = [
     NavbarComponent,
     FooterComponent,
     BrasileComponent,
-    CanadaComponent
+    CanadaComponent,
+    Login2Component,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
