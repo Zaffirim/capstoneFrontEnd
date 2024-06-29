@@ -10,7 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrasileComponent } from './paesi/brasile/brasile.component';
 import { CanadaComponent } from './paesi/canada/canada.component';
-import { Login2Component } from './auth/login/login.component';
+import { Login2Component} from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PrenotaComponent } from './prenota/prenota.component';
@@ -36,6 +36,10 @@ const rotte: Route[] = [
   {
     path: 'prenota',
     component: PrenotaComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
   }
 ]
 
